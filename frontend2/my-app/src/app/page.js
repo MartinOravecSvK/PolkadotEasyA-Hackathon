@@ -1,6 +1,9 @@
 'use client';
 import Web3 from 'web3';
 import { useState } from 'react';
+import { Navbar } from './components';
+
+
 const providerRPC = {
   moonbase: 'https://rpc.api.moonbase.moonbeam.network',
 };
@@ -18,6 +21,7 @@ export default function Home() {
   };
   return (
     <div style={{ padding: '20px' }}>
+      <Navbar />
       <h1>Web3 Balance Checker</h1>
       <div style={{ marginBottom: '20px' }}>
         <input
