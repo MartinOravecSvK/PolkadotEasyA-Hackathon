@@ -3,6 +3,8 @@ import Web3 from 'web3';
 import { useState } from 'react';
 import { Navbar, Transactions } from './components';
 import { Footer } from './components';
+import { Welcome } from './components';
+
 
 const providerRPC = {
   moonbase: 'https://rpc.api.moonbase.moonbeam.network',
@@ -24,8 +26,9 @@ export default function Home() {
     <div className="gradient-bg-welcome">
       <Navbar />
     </div>
+        <Welcome />
     <Transactions />
     <Footer />
-  </div>
+    </div>
   );
 }
