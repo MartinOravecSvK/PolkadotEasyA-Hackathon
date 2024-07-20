@@ -2,7 +2,7 @@
 import Web3 from 'web3';
 import { useState } from 'react';
 import { Navbar } from './components';
-
+import { Footer } from './components';
 
 const providerRPC = {
   moonbase: 'https://rpc.api.moonbase.moonbeam.network',
@@ -38,6 +38,7 @@ export default function Home() {
           <p>The balance of {address} is: {balance} ETH</p>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
