@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Navbar, Transactions } from './components';
 import { Footer } from './components';
 import { Welcome } from './components';
+import { connectionTest } from 'src/app/../../../../backend/API-Middleware/polkadotAPI.js'
 
 
 const providerRPC = {
@@ -11,6 +12,7 @@ const providerRPC = {
 };
 const web3 = new Web3(providerRPC.moonbase);
 export const getBalance = async (address) => {
+  connectionTest()
   const balance = web3.utils.fromWei(await web3.eth.getBalance(address), 'ether');
   return balance;
 };
