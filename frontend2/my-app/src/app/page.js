@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Navbar, Transactions } from './components';
 import { Footer } from './components';
 import { Welcome } from './components';
+import { Services } from './components';
 
 
 const providerRPC = {
@@ -23,12 +24,11 @@ export default function Home() {
   };
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#DBCDC6' }}>
-    <div className="gradient-bg-welcome">
       <Navbar />
-    </div>
-        <Welcome />
-    <Transactions />
-    <Footer />
+      <Welcome />
+      <Services />
+      <Transactions />
+      <Footer />
     </div>
   );
 }

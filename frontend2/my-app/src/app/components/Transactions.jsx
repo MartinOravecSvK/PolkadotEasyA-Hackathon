@@ -6,7 +6,7 @@ import { shortenAddress } from "../utils/shortenAddress";
 const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword, amount, url }) => {
     
   return (
-    <div className="bg-[#181918] m-4 flex flex-1
+    <div className="bg-pink m-4 flex flex-1
       2xl:min-w-[450px]
       2xl:max-w-[500px]
       sm:min-w-[270px]
@@ -35,8 +35,8 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
           alt="nature"
           className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
         /> */}
-        <div className="bg-black p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
-          <p className="text-[#37c7da] font-bold">{timestamp}</p>
+        <div className="bg-hoverPink p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl ">
+          <p className="text-white font-bold " >{timestamp}</p>
         </div>
       </div>
     </div>

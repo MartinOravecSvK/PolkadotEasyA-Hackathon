@@ -10,6 +10,10 @@ module.exports = {
       textColor: {
         white: "#1f1a38",
       },
+      backgroundColor: {
+        hoverPink: "#d786ae",
+        pink: "#dd99bb"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

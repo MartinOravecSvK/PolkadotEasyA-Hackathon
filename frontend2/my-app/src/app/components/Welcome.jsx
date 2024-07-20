@@ -48,7 +48,7 @@ const Welcome = () => {
                     <button
                         type="button"
                         onClick={connectWallet}
-                        className="flex flex-row justify-center items-center my-5 bg-[#dd99bb] p-3 rounded-full cursor-pointer hover:bg-[#d786ae]"
+                        className="flex flex-row justify-center items-center my-5 bg-pink p-3 rounded-full cursor-pointer hover:bg-hoverPink"
                     >
                         <AiFillPlayCircle className="text-white mr-2 " />
                         <p className="text-white text-base font-semibold">
@@ -68,7 +68,7 @@ const Welcome = () => {
                         <button
                             type="button"
                             onClick={()=>{}}
-                            className="text-white w-full mt-2 bg-[#dd99bb] border-[1px] p-2 border-[#7b506f] hover:bg-[#d786ae]  rounded-full cursor-pointer"
+                            className="text-white w-full mt-2 bg-pink border-[1px] p-2 border-[#7b506f] hover:bg-hoverPink  rounded-full cursor-pointer"
                         >
                             Send now
                         </button>

@@ -20,7 +20,7 @@ const Navbar = () => {
         {["Ecosystem", "Features", "Development", "About"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#dd99bb] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#d786ae]">
+        <li className="bg-pink py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-hoverPink">
           Login
         </li>
       </ul>

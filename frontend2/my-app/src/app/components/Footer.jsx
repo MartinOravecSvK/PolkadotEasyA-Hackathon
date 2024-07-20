@@ -1,33 +1,75 @@
 import React from "react";
 
-// import logo from "../../images/logo.png";
-
 const Footer = () => (
-  <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
-    <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
-      {/* <div className="flex flex-[0.5] justify-center items-center">
-        <img src={logo} alt="logo" className="w-32" />
-      </div> */}
-      <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Ecosystem</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Features</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Development</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">About</p>
-      </div>
-    </div>
+    <div className="w-full flex flex-col p-8">
+        <div className="w-full flex flex-col md:flex-row justify-between items-start px-16 my-8 mt-48">
+            <div className="flex flex-col mb-6 md:mb-0">
+                <h4 className="text-white font-bold mb-2">ECOSYSTEM</h4>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Community</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Jobs</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Wallets</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Dapps</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Brand Hub</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Telemetry</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Treasury</a>
+            </div>
+            <div className="flex flex-col mb-6 md:mb-0">
+                <h4 className="text-white font-bold mb-2">FEATURES</h4>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Technology</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Blockspace</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">DOT token</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Staking</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Parachains</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">System parachains</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">XCM</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Auctions</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">OpenGov</a>
+            </div>
+            <div className="flex flex-col mb-6 md:mb-0">
+                <h4 className="text-white font-bold mb-2">DEVELOPMENT</h4>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Documentation</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Grants</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Bounties</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Blockchain Academy</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Build</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Substrate</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Alpha Program</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">PK Bridge Bounty</a>
+            </div>
+            <div className="flex flex-col">
+                <h4 className="text-white font-bold mb-2">ABOUT</h4>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">About Polkadot</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Blog</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Newsroom</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Roadmap</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Whitepaper</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Wiki</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">FAQ</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Support</a>
+                <a href="#" className="text-black text-base mb-1 cursor-pointer">Contact</a>
+            </div>
+        </div>
 
-    <div className="flex justify-center items-center flex-col mt-5">
-      <p className="text-white text-sm text-center">text</p>
-      <p className="text-white text-sm text-center font-medium mt-2">info@NFD.com</p>
-    </div>
+        <div className="flex justify-center items-center flex-col mt-8">
+            <h4 className="text-white font-bold mb-2">NEWSLETTER</h4>
+            <p className="text-black text-base mb-4">Subscribe to the newsletter to hear about Polkadot updates and events.</p>
+            <button className="px-6 py-2 bg-pink hover:bg-hoverPink rounded-md text-white font-medium">Subscribe</button>
+        </div>
 
-    <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
+        <div className="w-full h-[0.25px] bg-gray-400 my-8" />
 
-    <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
-      <p className="text-white text-left text-xs">@NFD2024</p>
-      <p className="text-white text-right text-xs">All rights reserved</p>
+        <div className="flex justify-between items-center w-full mt-8">
+            <p className="text-black text-xs">© 2024 Web3 Foundation</p>
+            <div className="flex space-x-4">
+                <a href="#" className="text-black text-xs">Legal Disclosures</a>
+                <a href="#" className="text-black text-xs">Disclaimer</a>
+                <a href="#" className="text-black text-xs">Privacy</a>
+                <a href="#" className="text-black text-xs">Manage Cookies</a>
+            </div>
+        </div>
+
+
     </div>
-  </div>
 );
 
 export default Footer;
