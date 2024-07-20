@@ -1,4 +1,4 @@
-// File: /Users/tasneemkurabadwala/PolkadotEasyA-Hackathon/frontend2/my-app/src/app/page.js
+// File: C:\Users\rbcca\Hackathon\easya x polkadot july 24\PolkadotEasyA-Hackathon\frontend2\my-app\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
