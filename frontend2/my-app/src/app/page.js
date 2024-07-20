@@ -1,7 +1,7 @@
 'use client';
 import Web3 from 'web3';
 import { useState } from 'react';
-import { Navbar } from './components';
+import { Navbar, Transactions } from './components';
 import { Footer } from './components';
 
 const providerRPC = {
@@ -20,10 +20,12 @@ export default function Home() {
     setBalance(balance);
   };
   return (
-    <div style={{ padding: '20px' }}>
+    <div className="min-h-screen">
+    <div className="gradient-bg-welcome">
       <Navbar />
-
-      <Footer />
     </div>
+    <Transactions />
+    <Footer />
+  </div>
   );
 }
