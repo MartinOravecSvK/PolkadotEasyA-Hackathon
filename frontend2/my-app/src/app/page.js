@@ -22,22 +22,7 @@ export default function Home() {
   return (
     <div style={{ padding: '20px' }}>
       <Navbar />
-      <h1>Web3 Balance Checker</h1>
-      <div style={{ marginBottom: '20px' }}>
-        <input
-          type="text"
-          placeholder="Enter Address"
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-          style={{ marginRight: '10px', color: 'black' }}
-        />
-      </div>
-      <button onClick={handleFetchBalance} className="mt-60">Get Balance</button>
-      {balance && (
-        <div>
-          <p>The balance of {address} is: {balance} ETH</p>
-        </div>
-      )}
+
       <Footer />
     </div>
   );
