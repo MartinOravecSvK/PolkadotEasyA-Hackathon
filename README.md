@@ -24,7 +24,6 @@ Get into correct directory:
 cd backend/substrate-node
 ```
 
-
 Build the node:
 ```
 cargo build --release
