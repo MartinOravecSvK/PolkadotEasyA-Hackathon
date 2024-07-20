@@ -12,7 +12,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+    <nav className="w-full flex md:justify-end justify-between items-center p-4">
       {/* <div className="md:flex-[0.85] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div> */}
@@ -20,7 +20,7 @@ const Navbar = () => {
         {["Ecosystem", "Features", "Development", "About"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+        <li className="bg-[#dd99bb] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#d786ae]">
           Login
         </li>
       </ul>

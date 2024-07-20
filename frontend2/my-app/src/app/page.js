@@ -22,7 +22,7 @@ export default function Home() {
     setBalance(balance);
   };
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#323537' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#DBCDC6' }}>
     <div className="gradient-bg-welcome">
       <Navbar />
     </div>
