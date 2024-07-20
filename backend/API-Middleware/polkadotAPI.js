@@ -4,7 +4,7 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 
 
 // Construct
-const wsProvider = new WsProvider('wss://rpc.polkadot.io');
+const wsProvider = new WsProvider('wss://');
 const api = await ApiPromise.create({ provider: wsProvider });
 
 // Do something

@@ -7,14 +7,27 @@ async function main() {
     const wsProvider = new WsProvider('ws://127.0.0.1:9944');
     const api = await ApiPromise.create({ provider: wsProvider });
 
-    // Check available modules
+    // Log available modules and methods
     console.log('Available modules:', Object.keys(api.tx));
+
+    // Ensure the balances module is present
+    if (!api.tx.balances) {
+        console.error('Balances module not found');
+        await api.disconnect();
+        return;
+    }
+
+    // Log available methods in the balances module
+    console.log('Available methods in balances module:', Object.keys(api.tx.balances));
 
     // Create a keyring instance
     const keyring = new Keyring({ type: 'sr25519' });
 
     // Pre-funded account (e.g., Alice)
     const alice = keyring.addFromUri('//Alice');
+
+    // Fetch the current nonce for Alice
+    let { nonce } = await api.query.system.account(alice.address);
 
     // Number of users to generate
     const NUM_USERS = 10;
@@ -40,16 +53,20 @@ async function main() {
 
         console.log(`Generated user ${i + 1}: ${address} with ${amount / Math.pow(10, 10)} DOT`);
 
-        if (api.tx.balances && api.tx.balances.transfer) {
+        // Ensure the transferAllowDeath method is available
+        if (api.tx.balances.transferAllowDeath) {
             // Transfer the random amount of DOT to the new account
-            const transfer = api.tx.balances.transfer(address, amount);
+            const transfer = api.tx.balances.transferAllowDeath(address, amount);
 
-            // Sign and send the transaction from Alice
-            const hash = await transfer.signAndSend(alice);
+            // Sign and send the transaction from Alice with the correct nonce
+            const hash = await transfer.signAndSend(alice, { nonce });
 
             console.log(`Transfer sent with hash ${hash}`);
+
+            // Increment nonce for the next transaction
+            nonce = nonce.addn(1);
         } else {
-            console.error('Balances module or transfer method not found');
+            console.error('transferAllowDeath method not found in balances module');
         }
     }
 
