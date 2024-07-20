@@ -33,3 +33,5 @@ hardhat.config.js
 .direnv
 
 .vscode/settings.json
+
+.next
