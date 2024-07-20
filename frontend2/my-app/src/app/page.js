@@ -28,7 +28,7 @@ export default function Home() {
           style={{ marginRight: '10px', color: 'black' }}
         />
       </div>
-      <button onClick={handleFetchBalance} style={{ marginBottom: '20px' }}>Get Balance</button>
+      <button onClick={handleFetchBalance} className="mt-60">Get Balance</button>
       {balance && (
         <div>
           <p>The balance of {address} is: {balance} ETH</p>

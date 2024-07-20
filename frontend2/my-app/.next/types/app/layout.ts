@@ -1,4 +1,4 @@
-// File: /Users/francescofiorani/doc/Hackathon/PolkadotEasyA-Hackathon/frontend/my-app/src/app/layout.js
+// File: /Users/tasneemkurabadwala/PolkadotEasyA-Hackathon/frontend2/my-app/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
