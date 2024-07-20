@@ -34,4 +34,4 @@ hardhat.config.js
 
 .vscode/settings.json
 
-.next
+**/.next
