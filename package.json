@@ -12,7 +12,12 @@
   "dependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.0.6",
     "@polkadot/api": "^12.2.1",
+    "@polkadot/keyring": "^13.0.2",
+    "@polkadot/util-crypto": "^13.0.2",
+    "cors": "^2.8.5",
     "ethers": "^6.13.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
     "hardhat": "^2.22.6"
   },
   "devDependencies": {

@@ -2,9 +2,13 @@ const { ApiPromise, WsProvider } = require('@polkadot/api');
 const fs = require('fs');
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const port = 5000;
+
+// Use CORS middleware
+app.use(cors());
 
 app.get('/api/transactions', async (req, res) => {
     try {
@@ -40,7 +44,7 @@ app.get('/api/transactions', async (req, res) => {
                     blockHash: blockHash.toHex(),
                     transactionIndex: index + 1,
                     method: `${extrinsic.method.section}.${extrinsic.method.method}`,
-                    signer,
+                    signer: extrinsic.signer.toString(),
                     nonce: extrinsic.nonce.toString(),
                     hash: extrinsic.hash.toHex()
                 });

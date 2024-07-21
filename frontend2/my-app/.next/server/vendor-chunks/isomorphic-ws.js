@@ -17,7 +17,7 @@ exports.modules = {
   \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("\n\nmodule.exports = __webpack_require__(/*! ws */ \"(ssr)/./node_modules/ws/index.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvaXNvbW9ycGhpYy13cy9ub2RlLmpzIiwibWFwcGluZ3MiOiJBQUFhOztBQUViLGtGQUE4QiIsInNvdXJjZXMiOlsid2VicGFjazovL215LWFwcC8uL25vZGVfbW9kdWxlcy9pc29tb3JwaGljLXdzL25vZGUuanM/ODE0ZCJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcblxubW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKCd3cycpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/isomorphic-ws/node.js\n");
+eval("\n\nmodule.exports = __webpack_require__(/*! ws */ \"(ssr)/./node_modules/ws/index.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvaXNvbW9ycGhpYy13cy9ub2RlLmpzIiwibWFwcGluZ3MiOiJBQUFhOztBQUViLGtGQUE4QiIsInNvdXJjZXMiOlsid2VicGFjazovL215LWFwcC8uL25vZGVfbW9kdWxlcy9pc29tb3JwaGljLXdzL25vZGUuanM/NDRkOSJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcblxubW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKCd3cycpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/isomorphic-ws/node.js\n");
 
 /***/ })
 
