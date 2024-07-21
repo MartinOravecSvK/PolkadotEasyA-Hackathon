@@ -4,7 +4,29 @@ import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
 
 const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword, amount, url }) => {
-    
+  
+  let srcImg;
+  if(message == "GOLD") {
+    srcImg = "/gold.png";
+  }
+  else if(message == "DIAMOND") {
+    srcImg = "/diamond.png";
+  }
+  else if(message == "RUBY") {
+    srcImg = "/ruby.png";
+  }
+  else if(message == "EMERALD") {
+    srcImg = "/emerald.png";
+  }
+  else if(message == "IRON") {
+    srcImg = "/iron.png";
+  }
+  else if(message == "OIL") {
+    srcImg = "/oil.png";
+  }
+  else {
+    srcImg = "";
+  }
   return (
     <div className="bg-pink m-4 flex flex-1
       2xl:min-w-[450px]
@@ -30,11 +52,11 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
             </>
           )}
         </div>
-        {/* <img
-          src={gifUrl || url}
+        <img
+          src={srcImg}
           alt="nature"
-          className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
-        /> */}
+          className="w-32 h-32 2xl:h-96 rounded-md object-cover mb-8"
+        />
         <div className="bg-hoverPink p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl ">
           <p className="text-white font-bold " >{timestamp}</p>
         </div>
