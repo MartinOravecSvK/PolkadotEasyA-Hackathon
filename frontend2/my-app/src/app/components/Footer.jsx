@@ -68,7 +68,11 @@ const Footer = () => (
             </div>
         </div>
 
-
+        <div className="flex justify-center items-center space-x-4">
+            <a href="#"><img src="/x2.png" alt="Twitter" style={{ width: '24px', height: '24px' }}/></a>
+            <a href="#"><img src="/reddit.png" alt="Reddit" style={{ width: '24px', height: '24px' }}/></a>
+            <a href="#"><img src="/git.png" alt="GitHub" style={{ width: '24px', height: '24px' }}/></a>
+        </div>
     </div>
 );
 
