@@ -2,8 +2,6 @@ import React from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 
-// import logo from "../../../public/images/logo copy.png"
-
 const NavBarItem = ({ title, classprops }) => (
     <li className={`mx-4 cursor-pointer ${classprops}`}>
         {title} <AiOutlineDown className="inline ml-2" />
@@ -14,10 +12,13 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
 
     return (
-        <nav className="w-full flex md:justify-end justify-between items-center p-4">
-            {/* <div className="md:flex-[0.85] flex-initial justify-center items-center">
-        <img src={logo} alt="logo" className="w-32 cursor-pointer" />
-      </div> */}
+        <nav className="w-full flex md:justify-start justify-between items-center p-4">
+            <div className="md:flex-[0.85] flex-initial justify-center items-center ml-16">
+                <div className="flex items-center space-x-4">
+                    <img src="./NPM-2.png" alt="logo" className="w-16 h-16 cursor-pointer" />
+                </div>
+            </div>
+
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {["Ecosystem", "Features", "Development", "About"].map((item, index) => (
                     <NavBarItem key={item + index} title={item} />
