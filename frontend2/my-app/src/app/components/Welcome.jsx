@@ -35,6 +35,7 @@ const Welcome = () => {
         }
     };
 
+
     return (
         <div className="flex w-full justify-center items-center">
             <div className="flex flex-col md:flex-row items-start justify-between md:p-20 py-12 px-4">
@@ -60,8 +61,8 @@ const Welcome = () => {
                 <div className="flex flex-col flex-1 items-center justify-start w-full mt-10 md:mt-0 bg-[#ead5d1] rounded-lg" >
                     <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism rounded-lg">
                         <Input placeholder="Address To" name="addressTo" type="text" handleChange={()=>{}} />
-                        <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={()=>{}} />
-                        <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={()=>{}} />
+                        <Input placeholder="Amount (DOT)" name="amount" type="number" handleChange={()=>{}} />
+                        <Input placeholder="Resource" name="keyword" type="text" handleChange={()=>{}} />
                         <Input placeholder="Enter Message" name="message" type="text" handleChange={()=>{}} />
 
                         <div className="h-[1px] w-full bg-gray-400 my-2" />
