@@ -7,26 +7,12 @@ async function main() {
     const wsProvider = new WsProvider('ws://127.0.0.1:9944');
     const api = await ApiPromise.create({ provider: wsProvider });
 
-    // Log available modules and methods
-    console.log('Available modules:', Object.keys(api.tx));
-
-    // Ensure the balances module is present
-    if (!api.tx.balances) {
-        console.error('Balances module not found');
-        await api.disconnect();
-        return;
-    }
-
-    // Log available methods in the balances module
-    console.log('Available methods in balances module:', Object.keys(api.tx.balances));
-
     // Create a keyring instance
     const keyring = new Keyring({ type: 'sr25519' });
 
     // Pre-funded account (e.g., Alice)
     const alice = keyring.addFromUri('//Alice');
-
-    // Fetch the current nonce for Alice
+    
     let { nonce } = await api.query.system.account(alice.address);
 
     // Number of users to generate
@@ -36,8 +22,9 @@ async function main() {
     const users = [];
 
     for (let i = 0; i < NUM_USERS; i++) {
-        // Generate a random pair
-        const pair = keyring.addFromUri(randomAsHex(32));
+        // Generate a random seed
+        const seed = randomAsHex(32);
+        const pair = keyring.addFromUri(seed);
         const { address, meta } = pair;
 
         // Generate a random amount of DOT to transfer
@@ -45,29 +32,24 @@ async function main() {
 
         // Add user details to the array
         users.push({
+            id: i,
             address,
             meta,
-            uri: pair.uri,
+            uri: seed,
             amount,
         });
 
         console.log(`Generated user ${i + 1}: ${address} with ${amount / Math.pow(10, 10)} DOT`);
 
-        // Ensure the transferAllowDeath method is available
-        if (api.tx.balances.transferAllowDeath) {
-            // Transfer the random amount of DOT to the new account
-            const transfer = api.tx.balances.transferAllowDeath(address, amount);
+        // Transfer the random amount of DOT to the new account
+        const transfer = api.tx.balances.transferAllowDeath(address, amount);
 
-            // Sign and send the transaction from Alice with the correct nonce
-            const hash = await transfer.signAndSend(alice, { nonce });
+        // Sign and send the transaction from Alice
+        const hash = await transfer.signAndSend(alice, { nonce });
+        // Increment nonce for the next transaction
+        nonce = nonce.addn(1);
 
-            console.log(`Transfer sent with hash ${hash}`);
-
-            // Increment nonce for the next transaction
-            nonce = nonce.addn(1);
-        } else {
-            console.error('transferAllowDeath method not found in balances module');
-        }
+        console.log(`Transfer sent with hash ${hash}`);
     }
 
     // Save user details to a JSON file

@@ -1,0 +1,82 @@
+[
+  {
+    "material": "gold",
+    "amount": 40000000000,
+    "steps": [
+      {
+        "from": "5HL85vCVQTmWwnZHWEEvijLZ46r55FsZsZfxTt3QGeAjH674",
+        "to": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "txHash": "0xa10c871b87f509304818047e4a89ab49bc2e47b684dcce4245649b6652b1a521"
+      },
+      {
+        "from": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "to": "5HGNQeJMiXv3JzjMAQ7DUAbE74uwBJpVLsyUVJn3U1BZgoMg",
+        "txHash": "0xc4b8bc92e17e2996261d19b84c1e5921f0ed55976f8b2b5c04ef0b786759ca4d"
+      }
+    ],
+    "trace": [
+      "0xa10c871b87f509304818047e4a89ab49bc2e47b684dcce4245649b6652b1a521",
+      "0xc4b8bc92e17e2996261d19b84c1e5921f0ed55976f8b2b5c04ef0b786759ca4d"
+    ]
+  },
+  {
+    "material": "lithium",
+    "amount": 40000000000,
+    "steps": [
+      {
+        "from": "5HL85vCVQTmWwnZHWEEvijLZ46r55FsZsZfxTt3QGeAjH674",
+        "to": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "txHash": "0xffdf27cd0e0ac67b92ef5d62008864ccf3b7560c8a628ad899efb133f213e21e"
+      },
+      {
+        "from": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "to": "5HGNQeJMiXv3JzjMAQ7DUAbE74uwBJpVLsyUVJn3U1BZgoMg",
+        "txHash": "0xbcc1c3b27be521fc5f8ab4f4ce6e6368e8f81f79511f2456e4bfa07b0e36dc94"
+      }
+    ],
+    "trace": [
+      "0xffdf27cd0e0ac67b92ef5d62008864ccf3b7560c8a628ad899efb133f213e21e",
+      "0xbcc1c3b27be521fc5f8ab4f4ce6e6368e8f81f79511f2456e4bfa07b0e36dc94"
+    ]
+  },
+  {
+    "material": "iron",
+    "amount": 60000000000,
+    "steps": [
+      {
+        "from": "5HL85vCVQTmWwnZHWEEvijLZ46r55FsZsZfxTt3QGeAjH674",
+        "to": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "txHash": "0x17a272da43c2d38a2ca64875faf2b4a6386e35a33c78e962168d2df9ba2a51cb"
+      },
+      {
+        "from": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "to": "5HGNQeJMiXv3JzjMAQ7DUAbE74uwBJpVLsyUVJn3U1BZgoMg",
+        "txHash": "0x983bcec04ac963c28e9716e39d0bea1a16541a03d5b6c07f9ff5555f49b2662c"
+      }
+    ],
+    "trace": [
+      "0x17a272da43c2d38a2ca64875faf2b4a6386e35a33c78e962168d2df9ba2a51cb",
+      "0x983bcec04ac963c28e9716e39d0bea1a16541a03d5b6c07f9ff5555f49b2662c"
+    ]
+  },
+  {
+    "material": "copper",
+    "amount": 40000000000,
+    "steps": [
+      {
+        "from": "5HL85vCVQTmWwnZHWEEvijLZ46r55FsZsZfxTt3QGeAjH674",
+        "to": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "txHash": "0x6093b7859c9839c2df4aed284ace39a56e8a1712f937f1ecb44c9af6b9661d93"
+      },
+      {
+        "from": "5HQh43B5ob37tMxFBv3WvwPFhKwUUXWyePhkR7x3VMRXQZkZ",
+        "to": "5HGNQeJMiXv3JzjMAQ7DUAbE74uwBJpVLsyUVJn3U1BZgoMg",
+        "txHash": "0x16df1b8d6f95beac091d46d9059ffab188d04164f303bb2d07bff3bff05d7711"
+      }
+    ],
+    "trace": [
+      "0x6093b7859c9839c2df4aed284ace39a56e8a1712f937f1ecb44c9af6b9661d93",
+      "0x16df1b8d6f95beac091d46d9059ffab188d04164f303bb2d07bff3bff05d7711"
+    ]
+  }
+]
