@@ -53,7 +53,7 @@ const Footer = () => (
         <div className="flex justify-center items-center flex-col mt-8">
             <h4 className="text-white font-bold mb-2">NEWSLETTER</h4>
             <p className="text-black text-base mb-4">Subscribe to the newsletter to hear about Polkadot updates and events.</p>
-            <button className="px-6 py-2 bg-pink hover:bg-hoverPink rounded-md text-white font-medium">Subscribe</button>
+            <button className="px-6 py-2 bg-pink hover:bg-hoverPink rounded-full text-white font-medium">Subscribe</button>
         </div>
 
         <div className="w-full h-[0.25px] bg-gray-400 my-8" />
