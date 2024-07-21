@@ -126,7 +126,7 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
         <img
           src={srcImg}
           alt="nature"
-          className="w-32 h-32 2xl:h-96 rounded-md object-cover mb-8"
+          className="h-32 2xl:h-96 rounded-md object-cover mb-8"
         />
         <div className="bg-hoverPink p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl ">
           <p className="text-white font-bold ">{timestamp}</p>
